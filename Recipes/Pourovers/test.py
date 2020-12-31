@@ -1,30 +1,42 @@
-fourty_pour_init = 40
+import time
+import os
 
-def profile(fourty_pour) :
-    question = "Please enter 1, 2, or 3 to determine your coffee's profile:\n\n 1. Bitter\n 2. Sweet\n 3. Balanced\n\nEnter here: "
-    prof_num = False
-    while prof_num not in [1, 2, 3] :
-        prof_num = input(question)
-        try :
-            prof_num = int(prof_num)
-            if prof_num == 1 :
-                    bloom1 = fourty_pour * 0.6
-                    bloom2 = fourty_pour * 0.4
-                    break
-            elif prof_num == 2 :
-                    bloom1 = fourty_pour * 0.4
-                    bloom2 = fourty_pour * 0.6
-                    break
-            elif prof_num == 3 :
-                    bloom1 = bloom2 = fourty_pour * 0.5
-                    break
-            else :
-                print("\nError.")
-        except :
-            print("\nError.")
-    return bloom1,bloom2
+def clear_terminal() :
+    os.system('cls' if os.name == 'nt' else 'clear')
 
-print("Would you prefer the profile of your coffee to be bitter, sweet, or balanced?\n")
-first_bloom,second_bloom = profile(fourty_pour_init)
-print(first_bloom,second_bloom)
+def countdown(seconds) :
+    while seconds > 0 :
+        if seconds >= 10 :
+            print(str(seconds),end="\r")
+            seconds -= 1
+            time.sleep(1)
+        else :
+            print(str(seconds)," ",end="\r")
+            seconds -= 1
+            time.sleep(1)
 
+def recipe1(pour1,pour2,pour3):
+    print("First Pour:", str(round(pour1,1))+"g")
+    print("Begin pour in:")
+    countdown(10)
+    print("Pour to", str(round(pour1,1))+"g")
+    countdown(40)
+    clear_terminal()
+    print("Second Pour:", str(round(pour2,1))+"g")
+    print("Begin pour in:")
+    countdown(5)
+    print("Pour to", str(round(pour1+pour2,1))+"g")
+    countdown(40)
+    clear_terminal()
+    print("Third Pour:", str(round(pour3,1))+"g")
+    print("Begin pour in:")
+    countdown(5)
+    print("Pour to", str(round(pour1+pour2+pour3,1))+"g")
+    countdown(45)
+    clear_terminal()
+    print("Finished")
+    return
+
+
+clear_terminal()
+recipe1(15,15,15)
