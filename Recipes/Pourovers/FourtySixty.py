@@ -1,5 +1,5 @@
 # Tetsu Kasuya's Award Winning 40/60 Recipe 
-# version 1.0
+# version 1.0.1
 # Script by u/ToCans
 
 # Imports
@@ -23,7 +23,7 @@ def next_step():
     print("\n****************************************************** \n")
 
 def profile(fourty_pour) :
-    question = "\nPlease enter 1, 2, or 3 to determine your coffee's profile:\n\n 1. Acidic\n 2. Balanced\n 3. Sweet\n\nEnter here: "
+    question = "\nPlease enter 1, 2, or 3 to determine your coffee's flavor profile:\n\n 1. Acidic\n 2. Balanced\n 3. Sweet\n\nEnter here: "
     prof_num = False
     while prof_num not in [1, 2, 3] :
         prof_num = input(question)
@@ -48,7 +48,7 @@ def profile(fourty_pour) :
     return bloom1,bloom2
    
 def strength(sixty_pour) :
-    question = "\nPlease enter 1, 2, or 3 to determine the strength of your coffee:\n\n 1. Weak\n 2. Balanced\n 3. Strong\n\nEnter here: "
+    question = "\nPlease enter 1, 2, or 3 to determine the strength of your coffee's flavor profile:\n\n 1. Light\n 2. Medium\n 3. Strong\n\nEnter here: "
     str_num = False
     while str_num not in [1, 2, 3] :
         str_num = input(question)
@@ -265,9 +265,9 @@ total_coffee_grams = float(users * grams)
 
 # Asks the user for their Coffee Profile and Strength Preferences
 next_step()
-print("Would you prefer the profile of your coffee to be acidic, balanced, or sweet?")
+print("Would you prefer the flavor profile of your coffee to be acidic, balanced, or sweet?")
 first_pour, second_pour = profile(fourty_pour_init)
-print("Would you prefer the strength of your coffee to be weak, balanced, or strong?")
+print("Would you prefer the strength of your coffee's flavor profile to be light, medium, or strong?")
 strength_num, third_pour, fourth_pour, fifth_pour = strength(sixty_pour_init)
 
 # Begins recipes
