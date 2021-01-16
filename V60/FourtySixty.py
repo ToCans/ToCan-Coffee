@@ -1,6 +1,5 @@
 # Tetsu Kasuya's Award Winning 4:6 Recipe 
 # version 1.0.2
-# Script by u/ToCans
 
 # Imports
 import time

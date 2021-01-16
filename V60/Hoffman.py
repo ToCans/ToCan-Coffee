@@ -1,6 +1,5 @@
 # James Hoffman's Ultimate V60 Recipe
 # version 1.0.0
-# Script by u/ToCans
 
 # Imports
 import time
