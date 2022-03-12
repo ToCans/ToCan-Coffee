@@ -1,0 +1,81 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
+
+/* Unviersal Selector for all elements */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+   
+}
+
+.navbar ul{
+    background-color: #C0C2C9;
+    border:2px solid black;
+    height: 400px;
+    left:0;
+    list-style-type: none;
+    top: 200px;
+    width: 200px;
+}
+.navbar a{
+    border:5px #5C4326;
+    color: black;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.navbar a:hover{
+    animation-fill-mode: forwards;
+    animation-duration: 250ms;
+    animation-name: bottom_gradual_glow;
+    color:blue;
+}
+
+/* Animations used */
+@keyframes bottom_gradual_glow{
+    0%{
+        background-color: rgb(250, 235, 215,0);
+        box-shadow: inset -1px -1px #00000033;
+        
+    }
+    50%{
+        background-color: rgb(250, 235, 215,0.5);
+        box-shadow: inset -1px -2px #00000033;
+    }
+    100%{
+        background-color: rgb(250, 235, 215,1.0);
+        box-shadow: inset -1px -3px #00000033;
+    }
+}
+
+.title_container{
+    background-color: #e6d1ad;
+    box-shadow: 0px 2px 5px black;
+    display: flex;
+    max-height: 200px;
+    width: 100%;
+}
+
+.title_container a{
+    color: #414141;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+}
+
+.title_container h1{
+    margin: auto;
+    padding: 10px 0px;
+    text-shadow: 1px 2px 2px #000000; 
+}
+
