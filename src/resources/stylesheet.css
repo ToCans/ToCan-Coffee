@@ -1,35 +1,35 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100&display=swap");
 
 /* Unviersal Selector for all elements */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-.background_blur{
-    background: rgba(255,255,255,0.2);
+.background_blur {
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
     height: 100%;
     width: 100%;
 }
 
-.content_container{
+.content_container {
     background-image: url(/res/images/hoya-leaf.jpg);
     background-repeat: no-repeat;
     background-position: 0% 40%;
     background-size: 100%;
 }
 
-.flex_col{
+.flex_col {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.flex_row{
+.flex_row {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -37,40 +37,52 @@
     height: 100%;
 }
 
-.image_container{
-    /*display: flex;
-    margin: auto;
-    */
+.image_container {
+    display: flex;
 }
 
-.image_container img{
+.image_container img {
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
-    margin: 5px auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+    width: 85%;
+    margin: 10px auto;
 }
 
-.introduction_container{
-    background-color: rgb(255, 228, 196);
+.introduction_container {
+    background-color: rgb(248, 213, 165);
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
     padding: 10px;
     width: 80%;
 }
 
-.navbar ul{
-    background-color: #3E3E3D;
+.introduction_container h1,
+p {
+    margin: 5px 0px;
+}
+
+.navbar {
+    height: 30px;
+}
+
+.navbar ul {
+    background-color: #3e3e3d;
     border-bottom: 3px solid rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    height: 30px;
     list-style-type: none;
     width: 100%;
 }
 
-.navbar a{
+.navbar ul li {
+    display: block;
+    position: relative;
+}
+
+.navbar ul li a {
     color: rgb(240, 240, 240);
     display: block;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 15px;
     padding: 5px 0px;
     text-decoration: none;
@@ -78,58 +90,94 @@
     width: 100px;
 }
 
-.navbar a:hover{
+.navbar ul li ul {
+    background-color: rgba(255, 228, 196, 0.9);
+    border-bottom: none;
+    display: none;
+    margin-top: 2px;
+    position: absolute;
+    width: 150px;
+}
+
+.navbar ul li ul li {
+    text-align: center;
+    width: 100%;
+}
+
+.navbar ul li ul li a {
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    padding: 5px 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.main_nav_tile:hover {
     animation-fill-mode: forwards;
     animation-duration: 200ms;
     animation-name: bottom_gradual_glow;
     background-color: #818181;
-    border-bottom: 3px solid rgba(255, 228, 196, 1.0);
+    border-bottom: 2px solid rgba(255, 228, 196, 1);
+    font-weight: bold;
+    margin-bottom: -2px;
 }
 
-.title_container{
-    background-color: #e4bc84;
+.navbar ul li:hover ul {
+    display: block;
+}
+
+.navbar ul li ul li a:hover {
+    background-color: rgb(226, 202, 173);
+    font-weight: bold;
+}
+
+.navbar ul li ul li:last-child a {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.title_container {
+    background-color: rgb(228, 188, 132);
     box-shadow: inset 0px -2px rgba(0, 0, 0, 0.5);
     display: flex;
-    position: relative;
     max-height: 200px;
     top: 0;
     width: 100%;
 }
 
-.title_container a{
+.title_container a {
     color: #414141;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 50px;
 }
 
-.title_container h1{
+.title_container h1 {
     margin: auto;
     padding: 10px 0px;
-    text-shadow: 1px 2px 2px #000000; 
+    text-shadow: 1px 2px 2px #000000;
 }
 
 /* Animations used */
 /* Most likely no longer using this animation*/
-@keyframes bottom_gradual_glow{
-    0%{
+@keyframes bottom_gradual_glow {
+    0% {
         background-color: rgba(129, 129, 129, 0.33);
     }
-    50%{
+    50% {
         background-color: rgba(129, 129, 129, 0.66);
     }
-    100%{
+    100% {
         background-color: rgba(129, 129, 129);
     }
 }
 
-/*
-@media screen and (min-width: 1200px){
-    .content_container{
-        background-position:0% 50%;
+@media screen and (min-width: 1000px) {
+    .content_container {
+        background-position: 0% 50%;
         background-size: 100%;
     }
-    .image_container img{
-        width: 55%;
+    .image_container img {
+        width: 75%;
     }
 }
-*/
