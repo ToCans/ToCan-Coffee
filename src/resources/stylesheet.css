@@ -57,6 +57,23 @@
     justify-content: center;
 }
 
+.footer_container {
+    align-items: center;
+    background-color: #3e3e3d;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer_container p {
+    color: rgb(255, 255, 255);
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
 .image_container {
     display: flex;
     margin: 10px auto;
@@ -78,8 +95,7 @@
     width: 80%;
 }
 
-.introduction_container h2,
-p {
+.introduction_container * {
     color: #414141;
     font-family: "Josefin Slab", serif;
     font-weight: 700;
