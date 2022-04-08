@@ -1,17 +1,17 @@
 <!-- This is going to be an area to practice HTML/CSS/JS for ToCan Coffee -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>ToCan Coffee | Home</title>
-        <link rel="icon" href="/res/images/coffee-icon.png" type="icon" />
-        <link rel="stylesheet" href="/src/resources/stylesheet.css" />
+        <title>ToCan Coffee | Basics</title>
+        <link rel="icon" href="/images/coffee-icon.png" type="icon" />
+        <link rel="stylesheet" href="/styles/stylesheet.css" />
     </head>
 
     <body>
         <header>
             <div class="title_container">
-                <h1><a href="/src/CoffeeHome.html">ToCan Coffee</a></h1>
+                <h1><a href="/home.html">ToCan Coffee</a></h1>
             </div>
         </header>
         <main class="content_container">
@@ -19,17 +19,17 @@
                 <nav class="navbar">
                     <ul class="flex_row">
                         <li>
-                            <a class="main_nav_tile" href="/src/CoffeeHome.html">Home</a>
+                            <a class="main_nav_tile" href="/home.html">Home</a>
                         </li>
                         <li>
-                            <a class="main_nav_tile" href="/src/Basics.html">Basics</a>
+                            <a class="main_nav_tile" href="/basics/">Basics</a>
                             <ul>
                                 <li><a href="#">Getting Started</a></li>
                                 <li><a href="#"> Essentials</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="main_nav_tile" href="/src/Recipes.html">Recipes</a>
+                            <a class="main_nav_tile" href="/recipes/recipes-home.html">Recipes</a>
                             <ul>
                                 <li><a href="#"> Pourover</a></li>
                                 <li><a href="#"> Pressure</a></li>
@@ -37,7 +37,9 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="main_nav_tile" href="/src/Equipment.html">Equipment</a>
+                            <a class="main_nav_tile" href="/equipment/equipment-home.html"
+                                >Equipment</a
+                            >
                             <ul>
                                 <li><a href="#"> Brewing Devices</a></li>
                                 <li><a href="#"> Scales</a></li>
@@ -47,7 +49,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="main_nav_tile" href="/src/Tools.html">Tools</a>
+                            <a class="main_nav_tile" href="/tools/tools-home.html">Tools</a>
                             <ul>
                                 <li><a href="#"> Grindsize Calculator</a></li>
                                 <li><a href="#"> Brewing Timer</a></li>
@@ -58,20 +60,20 @@
                 </nav>
 
                 <div class="flex_col">
-                    <div class="image_container">
-                        <img src="/res/images/v60-brews.png" alt="V60s Brewing" />
-                    </div>
-                    <div class="down_button_container">
-                        <p><a class="down_button" href="#greetings"></a></p>
-                    </div>
-                    <div id="greetings" class="introduction_container flex_col">
-                        <h2>Greetings!</h2>
+                    <div class="introduction_container flex_col">
+                        <h2>The Basics</h2>
                         <p>
-                            Thanks for visiting ToCan Coffee. Here you will find all of the
-                            necessary information to help get you started on your journey into
-                            coffee. A detailed look at brewing methods, recipes, and equipment can
-                            be found here, and useful tools are available to get the perfect cup.
-                            Enjoy!
+                            In order to get you set up and making coffee as soon as possible, there
+                            are two sections available: Getting Started and Essentials.
+                        </p>
+                        <p>
+                            The "Getting Started" section will go over what coffee is, a basic
+                            explanation of brewing it, and what you will need to start making coffee
+                            at home.
+                        </p>
+                        <p>
+                            The "Essentials" section covers the minimum amount of equipment needed
+                            to make your first quality brew.
                         </p>
                     </div>
                 </div>
@@ -79,7 +81,7 @@
         </main>
         <footer>
             <div class="footer_container">
-                <p>Copyright detail go here.</p>
+                <p>© 2022 ToCan Coffee. All rights reserved.</p>
             </div>
         </footer>
     </body>
