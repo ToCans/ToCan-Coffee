@@ -18,7 +18,7 @@
 }
 
 .content_container {
-    background-image: url(/images/hoya-leaf.jpg);
+    background-image: url(../images/hoya-leaf.jpg);
     background-position: 0% 40%;
     background-repeat: no-repeat;
     background-size: 100%;
