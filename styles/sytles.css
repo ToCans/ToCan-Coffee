@@ -14,14 +14,14 @@
     backdrop-filter: blur(2px);
     background: rgba(255, 255, 255, 0.2);
     height: 100%;
-    width: 100%;
+    width: 100vw;
 }
 
 .content_container {
     background-image: url(../images/hoya-leaf.jpg);
     background-position: 0% 40%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 85vh;
 }
 
@@ -69,7 +69,6 @@
 
 .footer_container p {
     color: rgb(255, 255, 255);
-
     font-family: "Quicksand", sans-serif;
     font-size: 12px;
     padding: 5px;
@@ -110,7 +109,7 @@
 }
 
 .navbar {
-    height: 30px;
+    height: 4vh;
 }
 
 .navbar ul {
@@ -122,19 +121,20 @@
 }
 
 .navbar ul li {
+    align-content: center;
     display: block;
     height: 100%;
     position: relative;
 }
 
 .navbar ul li a {
+    align-items: center;
     color: rgb(240, 240, 240);
-    display: block;
+    display: flex;
     font-family: "Quicksand", sans-serif;
     font-size: 15px;
     height: 100%;
-    padding: 5px 0px;
-    text-align: center;
+    justify-content: center;
     text-decoration: none;
     transition: box-shadow 200ms ease-in-out;
     transition: background-color 200ms ease-in-out;
@@ -152,7 +152,6 @@
 }
 
 .navbar ul li ul li {
-    text-align: center;
     width: 100%;
 }
 
@@ -196,7 +195,7 @@
     display: flex;
     height: 10vh;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .title_container a {
@@ -207,7 +206,7 @@
 
 .title_container h1 {
     margin: auto;
-    padding: 10px 0px;
+    padding: auto 0px;
     text-shadow: 1px 2px 2px #000000;
 }
 
@@ -236,13 +235,21 @@
     }
 }
 
-/* Mediea Controls*/
-@media screen and (min-width: 1000px) {
-    .content_container {
-        background-position: 0% 50%;
-        background-size: 100%;
+/* Media Controls can be added here*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 5vh;
     }
-    .image_container img {
-        width: 75%;
+    .navbar ul {
+        justify-content: space-evenly;
+        display: flex;
+    }
+    .navbar ul li a {
+        width: auto;
+    }
+    .navbar ul li:hover ul {
+        position: fixed;
+        left: 0;
+        width: 100vw;
     }
 }
