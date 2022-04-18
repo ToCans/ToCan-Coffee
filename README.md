@@ -11,13 +11,13 @@ Will hopefully start to sell equipment on site at some point (i.e. 3d printed bp
 
 ### Immmediate:
 
--   Delete Index.html in basics,equipment,recipes, and tools folders.
--   Move contents to specific part of folders (i.e. move "basics" index.html to a new html in "basics/getting-started".
--   Will then have to change hover effects from anchors to list items
+-   Add in content for the equipment, recipes, and tools files
+-   Will have to change hover effects from anchors to list items. Fix broken anchor links too.
+-   Start Adding content.
 
 ### Shelf:
 
--   Add more viewports options.
 -   JS for scrolling images.
+-   Start storing grinder ratios
 
 Copyright (c) 2022 ToCan Coffee. All rights reserved.
