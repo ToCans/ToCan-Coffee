@@ -1,5 +1,6 @@
 Thanks you to:
     Images:
         Nathan Dumlao
-        Tyler Nix
         Rodrigo Flores
+        Scott Webb
+        Tyler Nix
