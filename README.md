@@ -13,7 +13,6 @@ Will hopefully start to sell equipment on site at some point (i.e. 3d printed bp
 
 -   Add in content for the equipment, recipes, and tools files
 -   Will have to change hover effects from anchors to list items. Fix broken anchor links too.
--   Start Adding content.
 
 ### Shelf:
 
