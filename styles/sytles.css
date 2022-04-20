@@ -263,10 +263,11 @@
         width: 100%;
     }
     .navbar ul li:hover .submenu {
-        /*position: absolute;
+        position: fixed;
         left: 0;
         margin-left: 0;
-        width: 100%;*/
+        width: 100%;
+        touch-action: none;
     }
     .text_container {
         width: 85%;
