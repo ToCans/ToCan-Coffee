@@ -125,15 +125,15 @@
     display: none;
     height: auto;
     position: absolute;
-    top: 40px;
+    margin-top: 40px;
     width: 175px;
 }
 
 .navbar ul li:hover ul {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /*display: flex;
+    flex-direction: column;*/
     animation: opacity-in 300ms ease-in-out forwards;
-    opacity: 1;
 }
 
 .navbar ul li ul li a {
