@@ -250,7 +250,7 @@
         width: 30%;
     }
     .text_container {
-        width: 75%;
+        width: 70%;
     }
 }
 
@@ -263,10 +263,10 @@
         width: 100%;
     }
     .navbar ul li:hover .submenu {
-        position: fixed;
+        /*position: absolute;
         left: 0;
         margin-left: 0;
-        width: 100%;
+        width: 100%;*/
     }
     .text_container {
         width: 85%;
