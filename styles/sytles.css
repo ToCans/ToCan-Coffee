@@ -95,7 +95,7 @@
     justify-content: space-around;
     height: 40px;
     list-style-type: none;
-    width: 40%;
+    width: 50%;
 }
 
 .navbar ul li {
@@ -130,9 +130,8 @@
 }
 
 .navbar ul li:hover ul {
-    display: block;
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     animation: opacity-in 300ms ease-in-out forwards;
 }
 
