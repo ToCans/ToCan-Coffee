@@ -10,23 +10,23 @@
     text-decoration: none;
 }
 
-.background_blur {
+.background-blur {
     backdrop-filter: blur(2px);
     background: rgba(255, 255, 255, 0.2);
 }
 
-.content_container {
+.main-container {
     background-image: url(../images/hoya-leaf.jpg);
     background-position: 0% 40%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.down_button_container {
+.down-button-container {
     display: flex;
 }
 
-.down_button {
+.down-button {
     border-bottom: 3px solid rgba(129, 129, 129, 0.75);
     border-right: 3px solid rgba(129, 129, 129, 0.75);
     display: inline-block;
@@ -36,19 +36,19 @@
     width: 15px;
 }
 
-.down_button:hover {
+.down-button:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 1);
     border-right: 3px solid rgba(255, 255, 255, 1);
 }
 
-.flex_col {
+.flex-col {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.flex_row {
+.flex-row {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -56,7 +56,7 @@
     justify-content: center;
 }
 
-.footer_container {
+.footer-container {
     align-items: center;
     background-color: rgb(62, 62, 61);
     display: flex;
@@ -64,18 +64,18 @@
     justify-content: center;
 }
 
-.footer_container p {
+.footer-container p {
     color: rgb(255, 255, 255);
     font-family: "Quicksand", sans-serif;
     font-size: 0.8rem;
 }
 
-.image_container {
+.image-container {
     margin-top: 10px;
     width: 50%;
 }
 
-.image_container img {
+.image-container img {
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
     height: auto;
@@ -84,30 +84,36 @@
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
     background-color: rgb(62, 62, 61);
     width: 100%;
+    height: 40px;
 }
 
-.navbar ul {
+.navbar .main-menu {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    /*background-color: rgb(62, 62, 61);
+    width: 100%;*/
+}
+
+.navbar .main-menu ul {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     display: flex;
     justify-content: space-around;
-    height: 40px;
     list-style-type: none;
     width: 50%;
 }
 
-.navbar ul li {
+.navbar .main-menu ul li {
     font-size: 1rem;
     height: 100%;
     justify-content: center;
     position: relative;
 }
 
-.navbar ul li a {
+.navbar .main-menu ul li a {
     align-items: center;
     color: rgb(240, 240, 240);
     display: flex;
@@ -118,7 +124,7 @@
     transition: 0.3s;
 }
 
-.navbar .submenu {
+.navbar .main-menu .submenu {
     background-color: rgb(245, 218, 181, 0.95);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -131,22 +137,22 @@
     width: 175px;
 }
 
-.navbar ul li:hover .submenu {
+.navbar .main-menu ul li:hover .submenu {
     display: block;
     animation: opacity-in 300ms ease-in-out forwards;
 }
 
-.navbar .submenu a {
+.navbar .main-menu .submenu a {
     color: rgb(0, 0, 0);
     padding: 5px 0px;
     width: 100%;
 }
 
-.main_nav_tile:hover {
+.main-nav-tile:hover {
     text-shadow: 0px 0px 1.5px rgb(255, 255, 255);
 }
 
-.main_nav_tile:after {
+.navbar .main-menu .main-nav-tile:after {
     background-color: rgb(255, 255, 255);
     bottom: 0;
     content: "";
@@ -158,19 +164,19 @@
     width: 50%;
 }
 
-.main_nav_tile:hover::after {
+.navbar .main-menu .main-nav-tile:hover::after {
     width: 130%;
     opacity: 1;
 }
 
-.navbar .submenu a:hover {
+.navbar .main-menu .submenu a:hover {
     animation-duration: 200ms;
     animation-fill-mode: forwards;
     animation-name: bottom-gradual-fade;
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
-.text_container {
+.text-container {
     background-color: rgb(245, 218, 181);
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
@@ -180,33 +186,52 @@
     width: 85%;
 }
 
-.text_container * {
+.text-container * {
     color: rgb(65, 65, 65);
     font-family: "Josefin Slab", serif;
     font-weight: 700;
     padding: 5px 0px;
 }
 
-.text_container p {
+.text-container p {
     font-weight: 600;
     width: 95%;
 }
 
-.title_container {
+.title-container {
     background-color: rgb(221, 181, 125);
     box-shadow: inset 0px -2px rgba(0, 0, 0, 0.5);
     height: 100px;
     width: 100%;
 }
 
-.title_container a {
+.title-container a {
     color: rgb(65, 65, 65);
     font-family: "Quicksand", sans-serif;
 }
 
-.title_container h1 {
+.title-container h1 {
     font-size: 4rem;
     text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.toggle-button {
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 1;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 /* Animations used */
@@ -249,34 +274,83 @@
     .navbar ul {
         width: 30%;
     }
-    .text_container {
+    .text-container {
         width: 70%;
     }
 }
 
 /* Tablets */
 @media (max-width: 768px) {
-    .image_container {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .navbar .toggle-button-container {
+        display: flex;
+        width: 100%;
+        height: 40px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .main-menu ul {
+        width: auto;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .navbar .main-menu ul li {
+        font-size: 1rem;
+        height: 100%;
+        width: auto;
+        justify-content: center;
+        position: relative;
+        padding: 0.25rem 0;
+    }
+
+    .navbar .main-menu.active {
+        display: flex;
+    }
+    .navbar .main-menu .submenu {
+        background-color: rgb(245, 218, 181, 0.95);
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+        display: none;
+        padding: 10px;
+        margin-left: -50vw;
+        width: 100vw;
+    }
+
+    .navbar .main-menu ul li.active .submenu {
+        display: block;
+        position: relative;
+        animation: opacity-in 300ms ease-in-out forwards;
+    }
+
+    .image-container {
         width: 85%;
     }
-    .navbar ul {
-        width: 100%;
-    }
-    .navbar ul li:hover .submenu {
-        position: fixed;
-        left: 0;
-        margin-left: 0;
-        width: 100%;
-        touch-action: none;
-    }
-    .text_container {
+
+    .text-container {
         width: 85%;
     }
 }
 
 /* Phones */
 @media (max-width: 500px) {
-    .title_container h1 {
+    .title-container h1 {
         font-size: 3rem;
     }
     .navbar ul li,
@@ -287,10 +361,10 @@
 
 /* Lower Res Phones */
 @media (max-width: 300px) {
-    .title_container {
+    .title-container {
         height: 80px;
     }
-    .title_container h1 {
+    .title-container h1 {
         font-size: 2.5rem;
     }
     .navbar ul li,
