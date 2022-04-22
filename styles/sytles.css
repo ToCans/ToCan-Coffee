@@ -78,7 +78,7 @@
 .image-container img {
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
-    height: auto;
+    display: flex;
     margin: 0 auto;
     width: 100%;
 }
@@ -132,8 +132,10 @@
     display: none;
     height: auto;
     left: 50%;
-    margin-left: -87.5px;
+    z-index: 10;
     position: absolute;
+    /*margin-left is calculated in js*/
+    /* if width is changed, change js */
     width: 175px;
 }
 
@@ -170,9 +172,10 @@
 }
 
 .navbar .main-menu .submenu a:hover {
-    animation-duration: 200ms;
+    animation: bottom-gradual-fade 200ms ease-in-out forwards;
+    /*animation-duration: 200ms;
     animation-fill-mode: forwards;
-    animation-name: bottom-gradual-fade;
+    animation-name: bottom-gradual-fade;*/
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
@@ -243,6 +246,16 @@
         opacity: 1;
     }
 }
+@keyframes opacity-in-img {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    5%,
+    95% {
+        opacity: 1;
+    }
+}
 
 @keyframes bottom-gradual-glow {
     0% {
@@ -268,10 +281,35 @@
     }
 }
 
+@keyframes left-slide-in-out {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    10% {
+        left: 0%;
+        opacity: 1;
+    }
+    90% {
+        left: 0%;
+        opacity: 1;
+    }
+    100% {
+        right: 100%;
+        opacity: 0;
+    }
+}
+
 /* Media Controls*/
 /* Wide Laptops */
 @media (min-width: 1440px) {
-    .navbar ul {
+    .title-container {
+        height: 150px;
+    }
+    .title-container h1 {
+        font-size: 5rem;
+    }
+    .navbar .main-menu ul {
         width: 30%;
     }
     .text-container {
@@ -291,7 +329,7 @@
         position: absolute;
         width: 100vw;
         left: 0px;
-        margin-left: 0px;
+        /*margin-left: 0px;*/
     }
 
     .image-container {
