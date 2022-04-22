@@ -25,8 +25,6 @@ function offset_calcs() {
 
 function image_scroller() {
     let image_num = image.length;
-    let timer_length = 15000;
-    let timer_string = 'opacity-in-img ' + timer_length + 'ms ease-in forwards';
 
     // Init Hiding all pictures
     for (let counter = 0; counter < image_num; counter++) {
@@ -38,19 +36,18 @@ function image_scroller() {
     }
     if (slideindex < image_num) {
         image[slideindex].style.display = 'flex';
-        //image[slideindex].style.height = init_image_height + 'px';
-        //image[slideindex].style.animation = timer_string;
+    }
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        image[slideindex].style.animation = 'opacity-in 500msms ease-in forwards';
     }
     slideindex++;
-
-    setTimeout(image_scroller, timer_length);
+    setTimeout(image_scroller, 15000);
 }
 
 // Main running area
 // Init Setup for Image Scroller Function
 let slideindex = 0;
 let image = document.querySelectorAll('img');
-let init_image_height = image[slideindex].getBoundingClientRect().height;
 
 offset_calcs();
 image_scroller();
