@@ -39,7 +39,7 @@ function image_scroller() {
     if (slideindex < image_num) {
         image[slideindex].style.display = 'flex';
         //image[slideindex].style.height = init_image_height + 'px';
-        image[slideindex].style.animation = timer_string;
+        //image[slideindex].style.animation = timer_string;
     }
     slideindex++;
 
