@@ -46,11 +46,10 @@ function image_scroller() {
 
 // Main running area
 // Init Setup for Image Scroller Function
-let slideindex = 0;
-let image = document.querySelectorAll('img');
-
 document.addEventListener('DOMContentLoaded', function (event) {
     offset_calcs();
 });
 window.addEventListener('resize', offset_calcs);
+let slideindex = 0;
+let image = document.querySelectorAll('img');
 image_scroller();
