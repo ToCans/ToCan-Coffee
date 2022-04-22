@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ToCan Coffee | Home</title>
         <link rel="icon" href="/images/coffee-icon.png" type="icon" />
-        <link rel="stylesheet" href="styles/sytles.css" />
-        <script src="/scripts/script.js" defer></script>
+        <link rel="stylesheet" href="/styles/sytles.css" />
+        <script src="/scripts/script.js"></script>
     </head>
 
     <body>
@@ -19,40 +19,32 @@
         </header>
         <main class="main-container">
             <div class="background-blur">
-                <nav class="navbar">
-                    <div class="toggle-button-container">
-                        <a href="#" class="toggle-button">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </a>
-                    </div>
-
+                <nav class="navbar" id="navbar">
                     <div class="main-menu">
                         <ul>
                             <li>
                                 <a class="main-nav-tile" href="/index.html">Home</a>
                             </li>
-                            <li>
+                            <li id="basics-tab">
                                 <a class="main-nav-tile" href="#">Basics</a>
-                                <ul class="submenu">
+                                <ul id="basics-sub" class="submenu">
                                     <li>
                                         <a href="/basics/getting-started.html">Getting Started</a>
                                     </li>
                                     <li><a href="/basics/essentials.html"> Essentials</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li id="recipes-tab">
                                 <a class="main-nav-tile" href="#">Recipes</a>
-                                <ul class="submenu">
+                                <ul id="recipes-sub" class="submenu">
                                     <li><a href="/recipes/pourover.html"> Pourover</a></li>
                                     <li><a href="/recipes/pressure.html"> Pressure</a></li>
                                     <li><a href="/recipes/steep.html"> Steep</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li id="equipment-tab">
                                 <a class="main-nav-tile" href="#">Equipment</a>
-                                <ul class="submenu">
+                                <ul id="equipment-sub" class="submenu">
                                     <li>
                                         <a href="/equipment/brewing-devices.html">
                                             Brewing Devices</a
@@ -64,9 +56,9 @@
                                     <li><a href="/equipment/drinkware.html"> Drinkware</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li id="tools-tab">
                                 <a class="main-nav-tile" href="#">Tools</a>
-                                <ul class="submenu">
+                                <ul id="tools-sub" class="submenu">
                                     <li>
                                         <a href="/tools/grindsize-calculator.html">
                                             Grindsize Calculator</a
