@@ -49,6 +49,8 @@ function image_scroller() {
 let slideindex = 0;
 let image = document.querySelectorAll('img');
 
-offset_calcs();
-image_scroller();
+document.addEventListener('DOMContentLoaded', function (event) {
+    offset_calcs();
+});
 window.addEventListener('resize', offset_calcs);
+image_scroller();
