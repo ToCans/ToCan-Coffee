@@ -26,7 +26,7 @@ function offset_calcs() {
 function image_scroller() {
     let image_num = image.length;
     let timer_length = 15000;
-    let timer_string = 'opacity-in-img ' + timer_length + 'ms linear forwards';
+    let timer_string = 'opacity-in-img ' + timer_length + 'ms ease-in-out forwards';
 
     // Init Hiding all pictures
     for (let counter = 0; counter < image_num; counter++) {
