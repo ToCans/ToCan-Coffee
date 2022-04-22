@@ -40,7 +40,7 @@ function image_scroller() {
         image[slideindex].style.display = 'flex';
     }
     if (window.matchMedia('(min-width: 768px)').matches) {
-        image[slideindex].style.animation = 'opacity-in 500msms ease-in forwards';
+        //image[slideindex].style.animation = 'opacity-in 500msms ease-in forwards';
     }
     slideindex++;
     setTimeout(image_scroller, 15000);
@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     offset_calcs();
 });
 window.addEventListener('resize', offset_calcs);
+
 let slideindex = 0;
 let image = document.querySelectorAll('img');
 image_scroller();

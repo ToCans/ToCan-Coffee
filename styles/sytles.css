@@ -81,6 +81,7 @@
     display: flex;
     margin: 0 auto;
     width: 100%;
+    animation: opacity-in 500ms ease-in-out forwards;
 }
 
 .navbar {
@@ -329,11 +330,14 @@
         position: absolute;
         width: 100vw;
         left: 0px;
-        /*margin-left: 0px;*/
     }
 
     .image-container {
         width: 85%;
+    }
+
+    .image-container img {
+        animation: none;
     }
 
     .text-container {
