@@ -10,7 +10,6 @@ Centralized Location for getting into coffee. Site includes coffee basics, recip
 
 ### Immmediate:
 
--   Check if the Navbar on load margin left is still messed up
 -   Fix the Navbar after orientation margin left issues
 -   Add in content for the equipment, recipes, and tools files
 
