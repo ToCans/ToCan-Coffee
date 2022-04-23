@@ -5,12 +5,13 @@
 ## Introduction:
 
 Centralized Location for getting into coffee. Site includes coffee basics, recipes, brewing equipment, and tools.
-Will hopefully start to sell equipment on site at some point (i.e. 3d printed bpa free brewers, japanese ceramic mugs, etc).
 
 ## To Do:
 
 ### Immmediate:
 
+-   Check if the Navbar on load margin left is still messed up
+-   Fix the Navbar after orientation margin left issues
 -   Add in content for the equipment, recipes, and tools files
 
 ### Shelf:
