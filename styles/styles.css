@@ -15,11 +15,22 @@
 	background: rgba(255, 255, 255, 0.2);
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+}
+
 .main-container {
 	background-image: url(../images/hoya-leaf.jpg);
 	background-position: 0% 40%;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
 }
 
 .down-button-container {
@@ -85,6 +96,7 @@
 
 .navbar {
 	background-color: rgb(62, 62, 61);
+	display: block;
 	width: 100%;
 	height: 40px;
 }
