@@ -18,4 +18,4 @@ Centralized Location for getting into coffee. Site includes coffee basics, recip
 -   Start storing grinder ratios
 -   Start working on other tools. Grinder ratio tool > Local Roaster Locator > Brewing Timer
 
-Copyright (c) 2023 ToCan Coffee. All rights reserved.
+Copyright (c) 2024 ToCan Coffee. All rights reserved.
