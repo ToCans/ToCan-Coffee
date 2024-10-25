@@ -4,18 +4,17 @@
 
 ## Introduction:
 
-Centralized Location for getting into coffee. Site includes coffee basics, recipes, brewing equipment, and tools.
+Centralized Location for getting into coffee. Site includes coffee basics, recipes, brewing 
+equipment, and tools.
 
-## To Do:
+#### Preview:
+<img src="/ToCan-Coffee/images/desktopSnapshot1.png" alt="Desktop View" style="width: 200px; margin: 10px;">
 
-### Immmediate:
+#### Found here:
+https://github.com/ToCans/ToCan-Coffee 
 
--   Fix the Navbar after orientation margin left issues
--   Add in content for the equipment, recipes, and tools files
+#### Status:
 
-### Shelf:
-
--   Start storing grinder ratios
--   Start working on other tools. Grinder ratio tool > Local Roaster Locator > Brewing Timer
+On hold... working on other projects at the moment :)
 
 Copyright (c) 2024 ToCan Coffee. All rights reserved.
